@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+{% block title%}Register page{% endblock %}
+{% block content%}
+        <form action="#" method="POST">
+             {{form.hidden_tag()}}
+        <label for="input-submit">Register</label>
+        <p>Username:</p>
+        <p>{{form.username(class_="input-submit")}}</p>
+        <p>Email:</p>
+        <p>{{form.email(class_="input-submit")}}</p>
+        <p>Password:</p>
+        <p>{{form.password(class_="input-submit")}}</p>
+        <p>Repeat Password:</p>
+        <p>{{form.approved_password(class_="input-submit")}}</p>
+        <p>{{form.submit(class_="form-btn")}}</p>
+    </form>   
+{% endblock %}
